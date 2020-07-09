@@ -1,6 +1,39 @@
 $primary-color: #444;
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background: $primary-color;
+  color: #fff;
+  height: 100%;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5; //height between lines
+}
+
+// Headings
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 400; //thinner font
+
+  &.lg-heading {
+    //to settle styling for h1 class= :lg-heading
+    font-size: 6rem; // rem is multiplier of html tag font size (16p);
+  }
+
+  &.sm-heading {
+    margin-bottom: 2rem; //push the icons down
+    padding: 0.2rem 1rem; // bottom top | left right
+    background: rgba(lighten($primary-color, 2), 0.5); //background colour
+  }
+}
+
+a {
+  // all links
   color: #fff;
 }
