@@ -18,8 +18,7 @@ body {
 // Headings
 
 h1,
-h2,
-h3 {
+h2 {
   margin: 0;
   font-weight: 400; //thinner font
 
@@ -36,6 +35,11 @@ h3 {
   }
 }
 
+h6 {
+  font-size: 0.8rem;
+  color: $secondary-color;
+  font-weight: bold;
+}
 a {
   // all links
   color: set-text-color($primary-color);
@@ -125,7 +129,10 @@ main {
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-
+  .item {
+    text-align: center;
+    color: white;
+  }
   img {
     width: 100%; //100% of their containers
     border: 3px #fff solid;
