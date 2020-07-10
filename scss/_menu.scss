@@ -132,7 +132,7 @@ $opacity: 0.9;
 
 // Delay each nav item slide by 0.1s
 
-@for $x from 1 through 4 {
+@for $x from 1 through 5 {
   .nav-item.show:nth-child(#{$x}) {
     transition-delay: $x * 0.2s;
   }
