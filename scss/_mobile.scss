@@ -1,9 +1,35 @@
 // Widescreens
 @include mediaXl {
+  main {
+    .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem; //relative element (to font size
+      max-width: 800px;
+    }
+    .sm-heading {
+      &.index {
+        max-width: 500px; //to fit the above
+        text-align: center;
+      }
+    }
+  }
 }
 
 // Desktops and Laptops
 @include mediaLg {
+  main {
+    .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem; //relative element (to font size
+      max-width: 800px;
+    }
+    .sm-heading {
+      &.index {
+        max-width: 500px; //to fit the above
+        text-align: center;
+      }
+    }
+  }
 }
 
 // Tablets and Small Laptops
@@ -45,6 +71,18 @@
       width: 150px;
       height: 150px;
     }
+  }
+
+  .about-info {
+    // change orientation to stacked for small
+    grid-template-areas:
+      "bioimage"
+      "bio"
+      "job1"
+      "job2"
+      "job3";
+
+    grid-template-columns: 1fr;
   }
 }
 
