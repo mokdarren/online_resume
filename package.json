@@ -9,7 +9,7 @@
   },
   "author": "dmok",
   "license": "MIT",
-  "homepage": "https://mokdarren.github.io/online_resume",
+  "homepage": "mokdarren.com",
   "dependencies": {
     "gh-pages": "^3.1.0",
     "node-sass": "^4.14.1"
