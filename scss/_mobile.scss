@@ -11,6 +11,9 @@
       text-align: center;
     }
   }
+  .boxes {
+    max-width: 35rem;
+  }
 }
 
 // Desktops and Laptops
@@ -26,6 +29,10 @@
       max-width: 700px; //to fit the above
       text-align: center;
     }
+  }
+
+  .boxes {
+    max-width: 35rem;
   }
 }
 
@@ -85,7 +92,19 @@
 
 // Smartphones
 @include mediaSm {
+  padding: 2rem;
   main#Home h1 {
     margin-top: 10vh; //10 viewport heighs
+  }
+
+  .lg-heading {
+    margin-top: 1rem;
+    font-size: 5rem;
+  }
+
+  .boxes {
+    div {
+      font-size: 1rem;
+    }
   }
 }
